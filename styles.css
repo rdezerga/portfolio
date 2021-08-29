@@ -37,7 +37,7 @@ p{
     color: #ebebeb;
 }
 .header-img {
-    width: 100%;
+    width:fit-content;
     height: 400px;
     background-size: cover;
 }
