@@ -1,3 +1,4 @@
+
 function formVal() {
     var firstName = document.forms["form"]["firstName"];
     var lastName = document.forms["form"]["lastName"];
