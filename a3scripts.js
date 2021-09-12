@@ -10,6 +10,7 @@ function validateForm() {
 
     var phone = document.forms["myForm"]["phoneNumber"].value;
     if (!validateNotBlank(phone, "Phone Number")) return false;
+    if (phone.length < 10 || phone.length > 10) alert("Phone number must be 10 digits");
 
     var email = document.forms["myForm"]["emailAddress"].value;
     if (!validateNotBlank(email, "Email Address")) return false;

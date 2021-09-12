@@ -91,11 +91,11 @@ form {
     margin-bottom: 4px;
 }
 .form-group input{
-    width: 320px;
+    width: 420px;
     padding: 10px;
     color: rgb(34, 33, 33);
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .error-help{
     color: red;
@@ -117,4 +117,18 @@ button:hover {
 }
 .hidden {
     display: none;
+}
+#submit {
+    padding: 5px;
+    font-size: 24px;
+    border: 1px solid cadetblue;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: cadetblue;
+    border: 3px solid rgb(34, 33, 33);;
+    border-radius: 35px;
+    color: white;
 }
