@@ -17,12 +17,26 @@ function validateForm() {
     var message = document.forms["myForm"]["customMessage"].value;
     if (!validateNotBlank(message, "Custom Message")) return false;
 
-    
+    var conFirm = document.forms["myForm"]["confirm"].value;
+    if (!validateNotBlank(conFirm, "Confirm You're Human")) return false;
+
+    if (!confirmPrez()) return false;
+    return true;
 }
 function validateNotBlank(value, label) {
     if (value==null || value==""){
-        alert("Please enter a value for " + label);
+        window.alert("Please enter a value for " + label);
         return false;
     }
     return true;
 };
+function confirmPrez() {
+    var userAnswer= document.forms["myForm"]["confirm"].value;
+    var correctAnswer = "Biden";
+
+    if (userAnswer != correctAnswer) {
+        window.alert("Wrong!")
+        return false;
+    }
+    return true;
+}
