@@ -83,3 +83,38 @@ p{
 a.button{
     align-self: center;
 }
+form {
+    padding: 20px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 4px;
+}
+.form-group input{
+    width: 320px;
+    padding: 10px;
+    color: rgb(34, 33, 33);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.error-help{
+    color: red;
+    font-size: 12px;
+}
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: cadetblue;
+    border: 1px solid rgb(34, 33, 33);;
+    border-radius: 5px;
+    color: white;
+}
+.hidden {
+    display: none;
+}

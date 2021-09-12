@@ -20,17 +20,18 @@
 
 <body>
     <div class="container flex">
-    <form name="form">
-        <p>First Name: <input type="text" size="50" name="firstName"/></p> 
-        <p>Last Name: <input type="text" size="50" name="lastName"/></p>
-        <p>Phone Number: <input type="text" size="50" name="phoneNumber"/></p>
-        <p>E-mail Address: <input type="text" size="50" name="email"/></p>
-        <p>Birth Date: <input type="text" size="50" name="birthDate"/></p>
-        <p>Enter a Custom Message: <input type="text" size="75" name="message"/></p>
-        <p>Confirmation: Who is the current President?</p>
-            <p> <input type="text"  size="50" name="confirmation"/></p>
-            <a href="a3confirm.html" class="button">Submit</a>
-         </form>
+        <div class="form-group">
+    <form name="myForm" onsubmit= "return validateForm()" action="mailto:robertdezerga@gmail.com" method="POST" enctype="text/plain">
+        <label>First Name: <input type="text" size="45" name="firstName" /></label>
+        <label>Last Name: <input type="text" size="45" name="lastName" /></label>
+        <label>Street Address: <input type="text" size="45" name="streetAddress" /></label>
+        <label>Phone Number: <input type="text" size="45" name="phoneNumber" /></label>
+        <label>Email Address: <input type="email" size="45" name="emailAddress" /></label>
+        <label>Custom Message: <input type="text" size="45" name="customMessage" /></label>
+        
+        <input type="submit" value="Submit" />
+    </form>
+</div>
         </div>
         
     
