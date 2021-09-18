@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <script src="jquery-3.6.0.js"></script>
+    <script src="a4scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Robert DeZerga-Home</title>
+    <title>Equation Plotting</title>
     <div class="navbar">
         <div class="container flex">
             <h1 class="logo">Robert DeZerga</h1>
@@ -19,9 +20,20 @@
 </head>
 
 <body>
-    <p>My name is Robert DeZerga. This is my custom portfolio to highlight what I've learned while pursuing my degree in IT.</p>
-    
-         
-    <div id="footer">Created by Robert DeZerga</div>
+    <div class="container">
+    <h2>Equation Calculator</h2><br/>
+    <h3>y = atan(bx + c)</h3><br/>
+    <br/><br/>
+    Input A: <input type="text" id="a" size="5" value="1" /><br/>
+    Input B: <input type="text" id="b" size="5" value="1" /><br/>
+    Input C: <input type="text" id="c" size="5" value="1" /><br/>
+    X-Min: <input type="text" id="xmin" size="5" value="-10" />
+    X-Max: <input type="text" id="xmax" size="5" value="10" />
+    <br/><br/>
+    <input type="button" value="Calculate" id="calculate" />
+    <input type="button" value="Plot" id="plot" />
+    <br/><br/>
+    <p id="output"> </p>
+</div>
 </body>
 </html>
