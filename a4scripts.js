@@ -88,7 +88,7 @@
             },
        
        series: [{
-                name: 'Y Values',
+                name: 'BMI',
                 color: 'rgba(223, 83, 83, .5)',
                 data: v
        }]                
