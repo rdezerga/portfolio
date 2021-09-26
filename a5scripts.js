@@ -5,18 +5,12 @@ var t = 0;
 var R = 0;
 var r = 0;
 var O = 0;
-var stop = false;
-
-//Stop function
-
-function stopDrawing(){
-  clearInterval(interval);
-}
 
 //Drawing function
 
 function doDrawing(){
 //random variables
+
   t = Math.floor(Math.random() * 100);
   R = Math.floor(Math.random() * 100);
   r = Math.floor(Math.random() * 100);
@@ -35,17 +29,14 @@ function doDrawing(){
   ctx.moveTo(x,y);
   ctx.beginPath();
   ctx.strokeStyle = color;
-//drawing time
+//drawing timer
   var interval = setInterval(function(){
     timesRun += 1;
-    if(timesRun === 1000000) {
-      clearInterval(interval);
-    }
-    if (stop == true){
+    if(timesRun === 10000) {
       clearInterval(interval);
     }
     drawSpirograph(x, y);
-  }, 5);
+  }, 1);
 }
 
 //spirograph formula
