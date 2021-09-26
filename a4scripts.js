@@ -1,4 +1,4 @@
-$(window).load(function() {
+
 
     function calculateY(a, b, c, x) {
         return a * x * x + b * x + c;
@@ -31,5 +31,5 @@ $(window).load(function() {
     
     
 
-});
+
 
