@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="jquery-3.6.0.js"></script>
+    <title>Spirograph</title>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Robert DeZerga</h1>
+               <nav>
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="assignments.html">Assignments</a></li>
+                       <li><a href="socials.html">Socials</a></li>
+                   </ul>
+               </nav>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="container flex">
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<div class="container flex">
+   <button onclick="doDrawing();">Start Drawing!</button>
+   <button onclick="stopDrawing();">Stop Drawing!</button>
+</div>
+   <script src="a5scripts.js"></script>
+</body>
+</html>
