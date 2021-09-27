@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>JSON</title>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Robert DeZerga</h1>
+               <nav>
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="assignments.html">Assignments</a></li>
+                       <li><a href="socials.html">Socials</a></li>
+                   </ul>
+               </nav>
+        </div>
+    </div>
+</head>
+
+<body>
+    <h1>SoulsBourne Ranking</h1><br>
+    <div class="container flex">
+    
+    <style>
+        th{
+            color: black;
+            padding: 40px;
+            justify-content: center;
+            background-color:cadetblue;
+            border: 1px solid #ddd;
+        }
+        
+        td{
+            padding:10px;
+            color: black;
+            border: 1px solid #ddd;
+        }
+        tr:hover{
+            background-color:rgb(145, 248, 248);
+        }
+        table{
+            background-color: white;
+        }
+    </style>       
+    
+    <table class="table table-stripped">
+        <tr class="bg-info">
+            <th>Game</th>
+            <th>Hardest Boss</th>
+            <th>Easiest Boss</th>
+            <th>Hardest Area</th>
+            <th>Easiest Area</th>
+        </tr>
+        <tbody id="myTable"></tbody>
+    </table>
+    <script>
+        var myArray = [
+            {'game':'Demons Souls', 'hardBoss':'False King Allant', 'easyBoss':'King Allant', 'hardArea':'Tower of Latria', 'easyArea':'Smithing Grounds'},
+            {'game':'Dark Souls', 'hardBoss':'Ornstein & Smough', 'easyBoss':'Pinwheel', 'hardArea':'Upper Blighttown', 'easyArea':'Northern Undead Asylum'},
+            {'game':'Dark Souls 2', 'hardBoss':'Fume Knight', 'easyBoss':'Covetous Demon', 'hardArea':'Frigid Outskirts', 'easyArea':'Forest of the Fallen Giants'},
+            {'game':'Dark Souls 3', 'hardBoss':'Sister Friede', 'easyBoss':'Iudex Gundyr', 'hardArea':'Dreg Heap', 'easyArea':'Forest of the Fallen Giants'},
+            {'game':'Bloodborne', 'hardBoss':'Ludwig the Accursed/Holy Blade', 'easyBoss':'Witches of Hemwick', 'hardArea':'Fishing Hamlet', 'easyArea':'Healing Church Workshop'},
+            {'game':'Sekiro', 'hardBoss':'Isshin Sword Saint', 'easyBoss':'Folding Screen Monkeys', 'hardArea':'Ashina Castle (Revisit)', 'easyArea':'Ashina Reservoir'},
+        ]
+
+        buildTable(myArray)
+
+        function buildTable(data){
+            var table = document.getElementById('myTable')
+            for (var i = 0; i < data.length; i++){
+                var row = `<tr>
+                    <td>${data[i].game}</td>
+                    <td>${data[i].hardBoss}</td>
+                    <td>${data[i].easyBoss}</td>
+                    <td>${data[i].hardArea}</td>
+                    <td>${data[i].easyArea}</td>
+                    </tr>`
+                    table.innerHTML += row
+            }
+        }
+    </script>
+    </div>
+    <div id="footer">Created by Robert DeZerga</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+</html>
