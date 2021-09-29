@@ -87,10 +87,11 @@ p{
 }
 .socialLinks a{
     color:cadetblue;
-    padding: 50px;
-    margin: 50px;
+    padding: 40px;
+    margin: 40px;
     text-align: center;
 }
+
 a.button{
     align-self: center;
 }
