@@ -161,3 +161,11 @@ canvas{
     padding-right: 10px;
     margin-top: 100px;
 }
+.drop {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+.drop:hover {
+    background-color: red;
+}
