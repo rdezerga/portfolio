@@ -15,6 +15,9 @@ function init() {
         drop: handleDropEvent
     });
 }
+
+
+
 var cardsInDeck = new Array();
 var numberOfCardsInDeck = 52;
 cardsInDeck[0] = "C1";
@@ -73,7 +76,7 @@ cardsInDeck[51] = "S13";
 function dealCard(i) {
     if (numberOfCardsInDeck == 0) return false;
     var img = document.createElement("img");
-    img.src = "https://rdezerga.github.io/portfolio/playingCards" + cardsInDeck[i] + ".png";
+    img.src = "https://rdezerga.github.io/portfolio/cards/" + cardsInDeck[i] + ".png";
     img.id = cardsInDeck[i];
     img.alt = cardsInDeck[i];
     img.width = 100;
