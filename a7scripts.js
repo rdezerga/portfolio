@@ -73,7 +73,7 @@ cardsInDeck[51] = "S13";
 function dealCard(i) {
     if (numberOfCardsInDeck == 0) return false;
     var img = document.createElement("img");
-    img.src = ''
+    img.src = "https://rdezerga.github.io/portfolio/playingCards" + cardsInDeck[i] + ".png";
     img.id = cardsInDeck[i];
     img.alt = cardsInDeck[i];
     img.width = 100;
