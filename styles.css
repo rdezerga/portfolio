@@ -6,6 +6,7 @@
 body{
     background-color: rgb(27, 27, 27);
     font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
     color:rgb(255, 255, 255);
     line-height: 1.6;
     justify-content: center;
@@ -16,6 +17,7 @@ ul{
 }
 
 a{
+    font-size: larger;
     text-decoration: none;
     color: cadetblue;
 }
@@ -38,10 +40,12 @@ h3{
 }
 p{
     margin: 50px 0;
+    font-size: larger;
     text-align: center;
     color: white;
 }
 .navbar{
+    font-size: larger;
     background-color:rgb(58, 61, 61);
     color:rgb(255, 255, 255);
 }
@@ -88,6 +92,7 @@ p{
 .socialLinks a{
     color:cadetblue;
     padding: 40px;
+    font-size: larger;
     margin: 40px;
     text-align: center;
 }
@@ -96,6 +101,7 @@ a.button{
     align-self: center;
 }
 form {
+    font-size: larger;
     padding: 20px;
 }
 .form-group label{
