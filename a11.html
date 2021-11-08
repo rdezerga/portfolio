@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Program Advisor</title>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Robert DeZerga</h1>
+               <nav>
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="assignments.html">Assignments</a></li>
+                       <li><a href="socials.html">Socials</a></li>
+                   </ul>
+                   <div class= "navbutton">
+                    <div class = "line1"></div>
+                    <div class = "line2"></div>
+                    <div class = "line3"></div>
+                </div>
+               </nav>
+        </div>
+    </div>
+    
+</head>
+
+<body>
+    
+    <h1>MUSIC PRODUCTION TECHNOLOGY CLASS PLANNER
+        <span class="tooltiptext" >
+          This quick planner is designed to allow students to easily and quickly determine what courses they 
+          need for their program of study.
+          <br> &#8592;&#8592;&#8592;&#8592;&#8592;&#8592;&#8592; Drag courses left if you have taken them. 
+          <br/>Drag courses courses right to create a schedule. &#8594;&#8594;&#8594;&#8594;&#8594;&#8594;&#8594;&#8594;
+          <br/> To print results - click <b style="color:red">What Can I Take</b> and click the Print button.
+        </span></h1>
+        
+        <div style="clear:left;">
+          <div class="greenbox">
+            Courses in green are available. Drag them into your desired semester.
+            <span class="tooltiptext">If you have met the pre-requisite by taking 
+        an equivalent class you should drag the associated class into the 
+        Completed column.</span>
+          </div>
+          <div class="graybox">
+            Gray courses mean pre-requisites are not met.
+          </div>
+          <div class="whitebox">
+            <input type="button" value="What Can I Take?" id="allAvailable" class="button" />
+            <input type="button" value="Undo" id = "undo" class="button" />
+            <button class="button" onclick="window.location.href='https://daytonastate.smartcatalogiq.com/en/2021-2022/College-Catalog/Program-Guides/A-S-Degree/Music-Production-Technology-Audio-Recording-A-S-Degree';">More Info</button>
+          </div>
+        </div>
+        </div>
+        <br/>
+        <br/>
+        
+        <div style="clear:left">
+          <table>
+            <tr>
+              <th>Drag Completed Courses Here</th>
+              <th>All Courses</th>
+              <th>Drag Semester Plan</th>
+        
+            </tr>
+            <tr>
+              <td valign="top">
+                <div id="completed" class="completed">
+                  <div class="hours">
+        
+                    <div id="CompletedHours"> Hours Completed:</div>
+                    <div id="ProgramHours">Program Hours (46 required): </div>
+                  </div>
+                  <br/>
+                  <div id="completedclasses" class="completedclasses">
+                  <b>Completed Courses</b><br/>
+                  </div>
+                  
+                  <br/>
+        
+                </div>
+              </td>
+              <td valign="top">
+                <div id="all">
+        
+                </div>
+              </td>
+              <td valign="top">
+                <div id="available"> </div>
+                <div id="semester1" class="semester">
+                  <div id="semester1hours" class="hours">
+                    Semester 1 - Spring 2022
+                  </div>
+                  <div id="semesterclasses1" class="semesterclasses">            
+                  </div>
+        
+        <br/>
+                </div>
+                <br/>
+                <div id="semester2" class="semester">
+                  <div id="semester2hours" class="hours">
+                    Semester 2 - Summer 2022
+                  </div>
+                  <div id="semesterclasses2" class="semesterclasses">            
+                  </div>
+                  
+                  <br/>
+                </div>
+                <br/>
+                <div id="semester3" class="semester">
+                  <div id="semester3hours" class="hours">
+                    Semester 3 - Fall 2022
+                  </div>
+                            <div id="semesterclasses3" class="semesterclasses">            
+                  </div>
+        
+                  <br/>
+                </div>
+        
+              </td>
+        
+            </tr>
+          </table>
+        </div>
+        
+        
+        <div id="dialog" class="whatcanitake">
+        </div>
+        <div id="box"></div>
+        <link rel="stylesheet" href="a11styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+    <script src="a11scripts.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>

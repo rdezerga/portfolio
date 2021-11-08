@@ -1,0 +1,313 @@
+h1 {
+    float: left;
+    position: relative;
+    right: -10%;
+    text-align: left;
+    margin: 1em 0 0.5em 0;
+    color: white;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    
+  }
+  
+  h1 .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 12px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+    text-shadow: none;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .button,
+  .ui-button {
+    background-color: cadetblue;
+    /* Green */
+    border: 1;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 10px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight:bold;
+    font-size: small;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11.5px;
+  }
+  
+  .button:hover,
+  .ui-button:hover {
+    background-color: white;
+    /* Green */
+    border-radius: 10px;
+    border: none;
+    font-weight:bold;
+    color: black;
+    margin-top: 25px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11.5px;
+  }
+  
+  .classAvailable {
+    border-radius: 15px;
+    border: solid;
+    background: lightgreen;
+    padding: 0px;
+    text-align: center;
+    color: black;
+    margin: 5px;
+    width: 300px;
+    height: 100px;
+  }
+  
+  .classAvailable:hover {
+    border-radius: 15px;
+    border: double;
+    background: rgb(129, 221, 224);
+    padding: 0px;
+    margin: 5px;
+    width: 300px;
+    height: 100px;
+  }
+  
+  .greenbox {
+    border-radius: 5px;
+    border: solid;
+    background: lightgreen;
+    padding: 20px;
+    color: black;
+    margin: 5px;
+    width: 300px;
+    height: 120px;
+    float: left;
+  }
+  
+  .graybox {
+    border-radius: 5px;
+    border: solid;
+    background: rgb(142, 147, 151);
+    padding: 20px;
+    margin: 5px;
+    margin-left: 15px;
+    color: black;
+    width: 300px;
+    height: 120px;
+    float: left
+  }
+  
+  .whitebox {
+    border-radius: 5px;
+    border: solid;
+    background: rgb(182, 248, 253);
+    padding: 10px;
+    width: 300px;
+    margin: 5px;
+    color: black;
+    height: 120px;
+    float: left;
+    text-align: center;
+  }
+  
+  .whatcanitake {
+    border-radius: 15px;
+    border: solid;
+    background: white;
+    padding: 0px;
+    display: none;
+    color: black;
+    height: 400px;
+    width: 800px;
+    text-align: left;
+    position: relative;
+  }
+  
+  .ui-dialog-titlebar {
+    position: relative;
+    background-color: lightblue;
+    border-radius: 15px;
+    border: solid;
+  }
+  
+  .ui-dialog-buttonset {
+    position: relative;
+    background-color: lightblue;
+    border-radius: 5px;
+    border: solid;
+  }
+  
+  .classNotAvailable {
+    border-radius: 15px;
+    border: solid;
+    background: rgb(142, 147, 151);
+    padding: 0px;
+    color: black;
+    margin: 5px;
+    width: 300px;
+    height: 100px;
+  }
+  
+  .semester {
+    border-radius: 0px;
+    border: solid;
+    background: lightgray;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    width: 300px;
+    height: 620px;
+  }
+  
+  .completed {
+    border-radius: 0px;
+    border: solid;
+    background: lightgray;
+    padding: 10px;
+    margin: 5px;
+    width: 310px;
+    color: black;
+    height: 1120px;
+  }
+  
+  .hours {
+    border-radius: 0px;
+    border: solid;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    width: 270px;
+    height: 140px;
+  }
+  
+  .semesterclasses {
+    border-radius: 0px;
+    border: solid;
+    background: white;
+    margin: 5px;
+    padding: 10px;
+    color: black;
+    width: 270px;
+    height: 430px;  
+  }
+  
+  .completedclasses {
+    border-radius: 0px;
+    border: solid;
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    width: 270px;
+    height: 900px;  
+  }
+  
+  
+  input:enabled + label {
+    margin: 20px auto;
+    background: rgb(255, 255, 0);
+  }
+  
+  input:disabled + label {
+    opacity: 0.5;
+    background: rgb(255, 0, 0);
+  }
+  
+  input[type="checkbox"]:checked + label {
+    background: rgb(153, 204, 102);
+    font-weight: bold;
+  }
+  
+  h1:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .classAvailable:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .classNotAvailable:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .greenbox:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .classAvailable .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .classNotAvailable .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .greenbox .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
